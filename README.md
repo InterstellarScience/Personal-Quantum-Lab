@@ -18,7 +18,7 @@ Projects in this repository may include:
 
 - Python
 - Qiskit
-- Quantum Inspire & IBM 
+- Quantum Inspire & IBM Quantum Platform 
 - NumPy
 - SciPy
 - Matplotlib
