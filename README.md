@@ -1,6 +1,6 @@
 # Personal Quantum Lab
 
-Welcome to my Personal Quantum Lab.
+Welcome to my Personal Quantum Lab (PQL).
 
 This repository contains personal projects exploring quantum computing, quantum communication, and quantum information science. It serves as a collection of simulations, algorithm implementations, and practical experiments developed while studying modern quantum technologies.
 
@@ -34,7 +34,7 @@ Each project is contained in its own folder and includes:
 
 ## Purpose
 
-The goal of this repository is to document my progress in quantum computing and quantum communication through practical, hands-on projects while building a growing portfolio of implementations and simulations.
+The goal of the PQL is to document my progress in quantum computing and quantum communication through practical, hands-on projects while building a growing portfolio of implementations and simulations.
 
 ---
 
