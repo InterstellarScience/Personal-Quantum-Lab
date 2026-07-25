@@ -1,4 +1,4 @@
-# Personal Quantum Lab
+# Personal Quantum Lab (PQL)
 
 Welcome to my Personal Quantum Lab (PQL).
 
@@ -9,7 +9,7 @@ This repository contains personal projects exploring quantum computing, quantum 
 Projects in this repository may include:
 
 - Quantum algorithms
-- Quantum communication and QKD
+- Quantum communication and Quantum Key Distribution (QKD)
 - Quantum circuits
 - Quantum simulation
 - Quantum information theory
@@ -18,14 +18,15 @@ Projects in this repository may include:
 
 - Python
 - Qiskit
-- Quantum Inspire & IBM Quantum Platform 
+- Quantum Inspire
+- IBM Quantum Platform
 - NumPy
 - SciPy
 - Matplotlib
 
 ## Repository Structure
 
-Each project is contained in its own folder and includes:
+Each project is contained in its own folder and may include:
 
 - Source code
 - Documentation
@@ -34,11 +35,11 @@ Each project is contained in its own folder and includes:
 
 ## Purpose
 
-The goal of my PQL is to document my progress in quantum computing and quantum communication through practical, hands-on projects while building a growing portfolio of implementations and simulations.
+The goal of the Personal Quantum Lab is to document my progress in quantum computing and quantum communication through practical, hands-on projects while building a growing portfolio of implementations and simulations.
 
 ## Author
 
-Samuel Weinzaepfel
+**Samuel Weinzaepfel**
 
 ---
 
