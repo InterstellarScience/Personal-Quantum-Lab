@@ -34,7 +34,7 @@ Each project is contained in its own folder and includes:
 
 ## Purpose
 
-The goal of the PQL is to document my progress in quantum computing and quantum communication through practical, hands-on projects while building a growing portfolio of implementations and simulations.
+The goal of my PQL is to document my progress in quantum computing and quantum communication through practical, hands-on projects while building a growing portfolio of implementations and simulations.
 
 ## Author
 
