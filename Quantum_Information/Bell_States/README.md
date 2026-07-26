@@ -48,7 +48,7 @@ Qiskit Documentation. https://docs.quantum.ibm.com
 7. Skills learned
 - Bell state preparation using a Hadamard and a CNOT gate.
 - Pauli-X and Pauli-Z transformations.
-- Quantum circuit simulation with Qiskit Aer and parts of Qiskit coding.
+- Quantum circuit simulation with Qiskit Aer and the basics of Qiskit coding.
 - Statevector verification.
 - Measurement statistics using repeated shots.
 - Python functions and modular code organization.
