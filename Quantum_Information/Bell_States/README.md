@@ -6,6 +6,7 @@ The project goal was to study Bell states and how to generate them using Qiskit 
 
 Bell states are four maximally entangled two-qubit states. There are in total 4 possible Bell states which are:
 
+
 $$
 |\Phi^+\rangle = \frac{1}{\sqrt{2}}\left(|00\rangle + |11\rangle\right)
 $$
