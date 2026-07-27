@@ -35,7 +35,7 @@ Each project is contained in its own folder and may include:
 
 ## Purpose
 
-The goal of the Personal Quantum Lab is to document my progress in quantum computing and quantum communication through practical, hands-on projects while building a growing portfolio of implementations and simulations.
+The goal of the PQL is to record my progress in quantum computing and quantum communication through practical projects while still building a growing portfolio of implementations and simulations.
 
 ## Author
 
