@@ -8,15 +8,15 @@ The project goal was to study the quantum information protocol quantum teleporta
 
 Quantum teleportation is one of the first quantum communication protocols invented. It is used to transmit an unknown quantum state from Alice's qubit $q_0$ to Bob's qubit $q_2$, without physically sending the qubit itself. This process goes as follows:
 
-- The unknown qubit $q_0$ is prepared using the universal single-qubit gate (U gate). Alice and Bob must also share an entangled Bell state, conventionally chosen as $$|\Phi^+\rangle$$, where Alice's half of the Bell pair is $q_1$ and Bob's half is $q_2$.
+- The unknown qubit $q_0$ is prepared using the universal single-qubit gate (U gate). Alice and Bob also share an entangled Bell state, which is conventionally chosen as $$|\Phi^+\rangle$$, with Alice's half of the Bell pair being $q_1$ and Bob's half being $q_2$.
 
 - A CNOT gate is applied with $q_0$ as the control qubit and $q_1$ as the target qubit, followed by a Hadamard gate on $q_0$ to transform Alice's qubits into the Bell basis.
 
-- Both $q_0$ and $q_1$ are then measured, producing two classical bits (0 or 1), which are sent to Bob through a classical communication channel.
+- Both $q_0$ and $q_1$ are then measured, producing two classical bits (0 or 1), which are sent to Bob via classical communication.
 
 - Bob uses these classical bits to apply the appropriate correction operation to $q_2$: either the identity operator, the (X) gate, the (Z) gate, or both (X) and (Z), depending on Alice's measurement outcomes.
 
-- Finally, in this project, the teleportation is verified by applying the inverse of the original U gate to Bob's qubit. Since $U^\dagger U|0\rangle = |0\rangle$, measuring Bob's qubit should always return the state $|0\rangle$, confirming that the teleportation was successful.
+- In this project, the teleportation is verified by applying the inverse of the original U gate to Bob's qubit. Since $U^\dagger U|0\rangle = |0\rangle$, measuring Bob's qubit should always return the state $|0\rangle$, confirming that the teleportation was a success. In a real quantum computer, the result wouldn't be always $|0\rangle$ but it could also be $|1\rangle$ indicating that noise might interfered with the quantum teleportation protocol.
 
   
 
