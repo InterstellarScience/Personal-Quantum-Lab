@@ -26,11 +26,15 @@ The implementation follows the protocol described in the Background & Theory sec
 
 4. Results
 
+The results from the circuit in the image folder, shows for a simulation of n = 1024 measurement counts, the following: 
 
+{'001': 241, '010': 265, '011': 250, '000': 268}, 
+
+verifying that Bob's qubit is measured in the state $|0\rangle$, which clearly shows tha the teleportation was a success. The four possible measurement outcomes are also approximately equally distributed.
 
 5. How to run the code
 
-
+Simply running the code without adding or removing anything will execute the program and save the results. If you wish, you can slightly change the angles $\theta$ and $\phi$ to prepare your preferred quantum state.
 
 6. References / Further readings
 
@@ -41,3 +45,8 @@ IBM Quantum. Qiskit Documentation. https://quantum.cloud.ibm.com/docs
 Qiskit Documentation. https://docs.quantum.ibm.com
 
 7. Skills learned
+- Preparing arbitrary single-qubit states using the universal U gate.
+- Learning and implementing the quantum teleportation protocol.
+- Using classical conditional operations (if_test) in Qiskit.
+- Understanding the role of entanglement and classical communication in quantum teleportation.
+- Verifying quantum teleportation using the inverse of the state-preparation gate.
