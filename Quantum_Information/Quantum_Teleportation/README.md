@@ -16,7 +16,7 @@ Quantum teleportation is one of the first quantum communication protocols invent
 
 - Bob uses these classical bits to apply the appropriate correction operation to $q_2$: either the identity operator, the (X) gate, the (Z) gate, or both (X) and (Z), depending on Alice's measurement outcomes.
 
-- Finally, in this project, the teleportation is verified by applying the inverse of the original U gate to Bob's qubit. Since (U^\dagger U|0\rangle = |0\rangle), measuring Bob's qubit should always return the state (|0\rangle), confirming that the teleportation was successful.
+- Finally, in this project, the teleportation is verified by applying the inverse of the original U gate to Bob's qubit. Since $U^\dagger U|0\rangle = |0\rangle$, measuring Bob's qubit should always return the state (|0\rangle), confirming that the teleportation was successful.
 
   
 
