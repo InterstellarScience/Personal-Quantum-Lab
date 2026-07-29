@@ -22,7 +22,7 @@ Quantum teleportation is one of the first quantum communication protocols invent
 
 3. Implementation
 
-
+The implementation follows the protocol described in the Background & Theory section. First, the unknown quantum state is prepared on Alice's qubit using the U gate. Afterwards, the Bell pair is created between Alice's and Bob's qubits. Alice then performs the Bell-basis measurement, after which Bob applies the corresponding correction gates depending on the received classical bits. Finally, the teleportation is verified using the method described in the last paragraph of the Background & Theory section.
 
 4. Results
 
