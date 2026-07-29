@@ -53,4 +53,4 @@ Qiskit Documentation. https://docs.quantum.ibm.com
 - Quantum circuit simulation with Qiskit Aer and the basics of Qiskit coding.
 - Statevector verification.
 - Measurement statistics using repeated shots.
-- Python functions and modular code organization.
+- Python functions and code organization.
