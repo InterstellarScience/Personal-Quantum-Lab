@@ -1,3 +1,5 @@
+Project: Bell States
+
 1. Project Goal
 
 The project goal was to study Bell states and how to generate them using Qiskit simulations.
