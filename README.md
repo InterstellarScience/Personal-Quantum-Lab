@@ -6,13 +6,12 @@ This repository contains personal projects exploring quantum computing, quantum 
 
 ## Topics
 
-Projects in this repository may include:
+Projects that are studied in research areas such as:
 
-- Quantum algorithms
-- Quantum communication and Quantum Key Distribution (QKD)
-- Quantum circuits
-- Quantum simulation
-- Quantum information theory
+- Quantum Information
+- Quantum Communication and Quantum Key Distribution (QKD)
+- Quantum Computing
+- Quantum Cryptography
 
 ## Software & Platforms
 
@@ -29,7 +28,7 @@ Projects in this repository may include:
 Each project is contained in its own folder and may include:
 
 - Source code
-- Documentation
+- Documentation & Explanation
 - Example results
 - References where appropriate
 
