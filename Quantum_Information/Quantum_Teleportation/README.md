@@ -11,9 +11,7 @@ Quantum teleportation is one of the first quantum communication protocols invent
 The protocol proceeds as follows:
 
 An arbitrary quantum state is prepared on Alice's qubit (q_0) using the universal single-qubit gate (U(\theta,\phi,\lambda)). Alice and Bob also share an entangled Bell pair, conventionally prepared in the Bell state
-[
-|\Phi^+\rangle=\frac{1}{\sqrt{2}}\left(|00\rangle+|11\rangle\right),
-]
+$$|\Phi^+\rangle=\frac{1}{\sqrt{2}}\left(|00\rangle+|11\rangle\right)$$
 where (q_1) belongs to Alice and (q_2) belongs to Bob.
 Alice applies a CNOT gate with (q_0) as the control qubit and (q_1) as the target qubit, followed by a Hadamard gate on (q_0). These operations transform Alice's two qubits into the Bell basis.
 Alice measures both (q_0) and (q_1), producing two classical bits that are transmitted to Bob through a classical communication channel.
