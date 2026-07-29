@@ -1,0 +1,6 @@
+python
+qiskit
+qiskit-aer
+matplotlib
+numpy
+pathlib
