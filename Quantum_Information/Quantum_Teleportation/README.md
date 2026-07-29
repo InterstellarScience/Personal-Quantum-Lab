@@ -6,17 +6,22 @@ The project goal was to study the quantum information protocol quantum teleporta
 
 2. Background & Theory
 
-Quantum teleportation is one of the first quantum communication protocols invented. . It enables the transmission of an unknown quantum state from Alice's qubit (q_0) to Bob's qubit (q_2), without physically sending the qubit itself. The protocol requires a shared entangled Bell pair and the exchange of two classical bits of information.
+Quantum teleportation is one of the first quantum communication protocols invented. It is used to transmit an unknown quantum state from Alice's qubit q0 to Bob's qubit $q_2$, without physically sending the qubit itself. This process goes as follows:
 
-The protocol proceeds as follows:
+* The unknown qubit (q_0) is prepared using the universal single-qubit gate (U gate). Alice and Bob must also share an entangled Bell state, conventionally chosen as
+  [
+  |\Phi^+\rangle,
+  ]
+  where Alice's half of the Bell pair is (q_1) and Bob's half is (q_2).
 
-An arbitrary quantum state is prepared on Alice's qubit (q_0) using the universal single-qubit gate (U(\theta,\phi,\lambda)). Alice and Bob also share an entangled Bell pair, conventionally prepared in the Bell state
-$$|\Phi^+\rangle=\frac{1}{\sqrt{2}}\left(|00\rangle+|11\rangle\right)$$
-where (q_1) belongs to Alice and (q_2) belongs to Bob.
-Alice applies a CNOT gate with (q_0) as the control qubit and (q_1) as the target qubit, followed by a Hadamard gate on (q_0). These operations transform Alice's two qubits into the Bell basis.
-Alice measures both (q_0) and (q_1), producing two classical bits that are transmitted to Bob through a classical communication channel.
-Depending on the received classical bits, Bob applies the appropriate correction operation to (q_2). The possible corrections are the identity ((I)), (X), (Z), or (XZ). After this step, Bob's qubit is in exactly the same unknown quantum state that was initially prepared on Alice's qubit.
-In this project, the teleportation is verified by applying the inverse of the original state-preparation gate, (U^\dagger), to Bob's qubit. Since (U^\dagger U|0\rangle = |0\rangle), measuring Bob's qubit in the computational basis should always yield the state (|0\rangle), confirming successful teleportation.
+* A CNOT gate is applied with (q_0) as the control qubit and (q_1) as the target qubit, followed by a Hadamard gate on (q_0) to transform Alice's qubits into the Bell basis.
+
+* Both (q_0) and (q_1) are then measured, producing two classical bits (0 or 1), which are sent to Bob through a classical communication channel.
+
+* Bob uses these classical bits to apply the appropriate correction operation to (q_2): either the identity operator, the (X) gate, the (Z) gate, or both (X) and (Z), depending on Alice's measurement outcomes.
+
+* Finally, in this project, the teleportation is verified by applying the inverse of the original U gate to Bob's qubit. Since (U^\dagger U|0\rangle = |0\rangle), measuring Bob's qubit should always return the state (|0\rangle), confirming that the teleportation was successful.
+
   
 
 3. Implementation
