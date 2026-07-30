@@ -1,6 +1,6 @@
 Project: Quantum Teleportation
 
-1. Project Goal
+\section {1. Project Goal}
 
 The project goal was to study the quantum information protocol quantum teleportation and how to implement it using Qiskit.
 
