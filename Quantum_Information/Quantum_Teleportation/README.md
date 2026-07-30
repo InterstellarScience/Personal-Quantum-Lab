@@ -22,7 +22,7 @@ Quantum teleportation is one of the first quantum communication protocols invent
 
 3. Implementation
 
-The implementation follows the protocol described in the Background & Theory section. First, the unknown quantum state is prepared on Alice's qubit using the U gate, with a randomiser for the values of $\theta$ and $\phi$ each and $\lambda = 0$ . Afterwards, the Bell pair $|\Phi^+\rangle$ is created between Alice's and Bob's qubits. Alice then performs the Bell-basis measurement, where Bob applies the corresponding correction gates depending on the received classical bits (0 and/or 1). Finally, the teleportation is verified using the inverse U gate operation to confirm the state returns $|0\rangle$.
+The implementation follows the protocol described in the Background & Theory section. First, the unknown quantum state is prepared on Alice's qubit using the U gate, with a randomiser for the values of $\theta$ and $\phi$ each, and $\lambda = 0$ . Afterwards, the Bell pair $|\Phi^+\rangle$ is created between Alice's and Bob's qubits. Alice then performs the Bell-basis measurement, where Bob applies the corresponding correction gates depending on the received classical bits (0 and/or 1). Finally, the teleportation is verified using the inverse U gate operation to confirm the state returns $|0\rangle$.
 
 4. Results
 
