@@ -1,10 +1,10 @@
 Project: Quantum Teleportation
 
-\section{1. Project Goal}
+###1. Project Goal
 
 The project goal was to study the quantum information protocol quantum teleportation and how to implement it using Qiskit.
 
-2. Background & Theory
+###2. Background & Theory
 
 Quantum teleportation is one of the first quantum communication protocols invented. It is used to transmit an unknown quantum state from Alice's qubit $q_0$ to Bob's qubit $q_2$, without physically sending the qubit itself. This process goes as follows:
 
@@ -20,11 +20,11 @@ Quantum teleportation is one of the first quantum communication protocols invent
 
   
 
-3. Implementation
+###3. Implementation
 
 The implementation follows the protocol described in the Background & Theory section. First, the unknown quantum state is prepared on Alice's qubit using the U gate, with a randomiser for the values of $\theta$ and $\phi$ each, and $\lambda = 0$ . Afterwards, the Bell pair $|\Phi^+\rangle$ is created between Alice's and Bob's qubits. Alice then performs the Bell-basis measurement, where Bob applies the corresponding correction gates depending on the received classical bits (0 and/or 1). Finally, the teleportation is verified using the inverse U gate operation to confirm the state returns $|0\rangle$.
 
-4. Results
+###4. Results
 
 The results from the circuit in the image folder, shows for a simulation of n = 1024 measurement counts, the following: 
 
@@ -32,11 +32,11 @@ The results from the circuit in the image folder, shows for a simulation of n = 
 
 verifying that Bob's qubit is measured in the state $|0\rangle$, which clearly shows tha the teleportation was a success. The four possible measurement outcomes are also approximately equally distributed.
 
-5. How to run the code
+###5. How to run the code
 
 Simply running the code without adding or removing anything will execute the program and save the results. If you wish, you can slightly change the angles $\theta$ and $\phi$ to prepare your preferred quantum state.
 
-6. References / Further readings
+###6. References / Further readings
 
 Nielsen, M. A., & Chuang, I. L. (2010). Quantum Computation and Quantum Information (10th Anniversary ed.). Cambridge University Press.
 
@@ -44,7 +44,7 @@ IBM Quantum. Qiskit Documentation. https://quantum.cloud.ibm.com/docs
 
 Qiskit Documentation. https://docs.quantum.ibm.com
 
-7. Skills learned
+###7. Skills learned
 - Preparing arbitrary single-qubit states using the universal U gate.
 - Learning and implementing the quantum teleportation protocol.
 - Using classical conditional operations (if_test) in Qiskit.
