@@ -8,7 +8,7 @@ The project goal was to study the quantum information protocol quantum teleporta
 
 Quantum teleportation is one of the first quantum communication protocols invented. It is used to transmit an unknown quantum state from Alice's qubit $q_0$ to Bob's qubit $q_2$, without physically sending the qubit itself. This process goes as follows:
 
-- The unknown qubit $q_0$ is prepared using the universal single-qubit gate (U gate), defined as $U(\theta,\phi,\lam)=R_{z}(\theta)R_{y}(\phi)R_{z}(\lam)$. Alice and Bob also share an entangled Bell state, which is conventionally chosen as $$|\Phi^+\rangle$$, with Alice's half of the Bell pair being $q_1$ and Bob's half being $q_2$.
+- The unknown qubit $q_0$ is prepared using the universal single-qubit gate (U gate), defined as $U(\theta,\phi,\lambda)=R_{z}(\theta)R_{y}(\phi)R_{z}(\lambda)$. Alice and Bob also share an entangled Bell state, which is conventionally chosen as $$|\Phi^+\rangle$$, with Alice's half of the Bell pair being $q_1$ and Bob's half being $q_2$.
 
 - A CNOT gate is applied with $q_0$ as the control qubit and $q_1$ as the target qubit, followed by a Hadamard gate on $q_0$ to transform Alice's qubits into the Bell basis.
 
