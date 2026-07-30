@@ -34,3 +34,4 @@ Qiskit Documentation. https://docs.quantum.ibm.com
 - Applied Pauli X and Z gates to encode classical information into Bell states.
 - Decoded Bell states using CNOT and Hadamard gates.
 - Interpreted measurement results and verified successful classical message transmission.
+- Organised quantum circuits into reusable Python functions.
