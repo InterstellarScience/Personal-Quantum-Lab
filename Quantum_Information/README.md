@@ -8,8 +8,8 @@ Projects exploring qubits, quantum gates, measurement, entanglement, Bell states
 - Quantum State Tomography
 
 ## Current Project(s)
-- Quantum Teleportation
 - Superdense Coding
 
 ## Finished Project(s)
 - Bell_States
+- Quantum Teleportation
