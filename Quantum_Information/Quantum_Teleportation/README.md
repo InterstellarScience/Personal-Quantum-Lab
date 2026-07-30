@@ -1,4 +1,4 @@
-Project: Quantum Teleportation
+## Project: Quantum Teleportation
 
 ### 1. Project Goal
 
