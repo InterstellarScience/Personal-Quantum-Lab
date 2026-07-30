@@ -45,8 +45,8 @@ IBM Quantum. Qiskit Documentation. https://quantum.cloud.ibm.com/docs
 Qiskit Documentation. https://docs.quantum.ibm.com
 
 ### 7. Skills learned
-- Preparing arbitrary single-qubit states using the universal U gate.
-- Learning and implementing the quantum teleportation protocol.
-- Using classical conditional operations (if_test) in Qiskit.
-- Understanding the role of entanglement and classical communication in quantum teleportation.
-- Verifying quantum teleportation using the inverse of the state-preparation gate.
+- Prepared arbitrary single-qubit states using the universal U gate.
+- Learned and implemented the quantum teleportation protocol.
+- Used classical conditional operations (if_test) in Qiskit.
+- Understood the role of entanglement and classical communication in quantum teleportation.
+- Verified quantum teleportation using the inverse of the state-preparation gate.
