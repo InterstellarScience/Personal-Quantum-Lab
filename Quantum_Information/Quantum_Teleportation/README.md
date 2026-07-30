@@ -8,7 +8,7 @@ The project goal was to study the quantum information protocol quantum teleporta
 
 Quantum teleportation is one of the first quantum communication protocols invented. It is used to transmit an unknown quantum state from Alice's qubit $q_0$ to Bob's qubit $q_2$, without physically sending the qubit itself. This process goes as follows:
 
-- The unknown qubit $q_0$ is prepared using the universal single-qubit gate (U gate), defined as $U(\theta,\phi,\lambda)=R_{z}(\theta)R_{y}(\phi)R_{z}(\lambda)$. Alice and Bob also share an entangled Bell state, which is conventionally chosen as $$|\Phi^+\rangle$$, with Alice's half of the Bell pair being $q_1$ and Bob's half being $q_2$.
+- The unknown qubit $q_0$ is prepared using the universal single-qubit gate (U gate), defined as $U(\theta,\phi,\lambda)=R_{z}(\theta)R_{y}(\phi)R_{z}(\lambda)$. Alice and Bob also share an entangled Bell state, which is conventionally chosen as $|\Phi^+\rangle$, with Alice's half of the Bell pair being $q_1$ and Bob's half being $q_2$.
 
 - A CNOT gate is applied with $q_0$ as the control qubit and $q_1$ as the target qubit, followed by a Hadamard gate on $q_0$ to transform Alice's qubits into the Bell basis.
 
@@ -22,7 +22,7 @@ Quantum teleportation is one of the first quantum communication protocols invent
 
 3. Implementation
 
-The implementation follows the protocol described in the Background & Theory section. First, the unknown quantum state is prepared on Alice's qubit using the U gate. Afterwards, the Bell pair is created between Alice's and Bob's qubits. Alice then performs the Bell-basis measurement, after which Bob applies the corresponding correction gates depending on the received classical bits. Finally, the teleportation is verified using the method described in the last paragraph of the Background & Theory section.
+The implementation follows the protocol described in the Background & Theory section. First, the unknown quantum state is prepared on Alice's qubit using the U gate, with a randomiser for the values of $\theta$ and $\phi$ each and $\lambda = 0$ . Afterwards, the Bell pair $|\Phi^+\rangle$ is created between Alice's and Bob's qubits. Alice then performs the Bell-basis measurement, where Bob applies the corresponding correction gates depending on the received classical bits (0 and/or 1). Finally, the teleportation is verified using the inverse U gate operation to confirm the state returns $|0\rangle$.
 
 4. Results
 
