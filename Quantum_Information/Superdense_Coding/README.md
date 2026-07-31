@@ -8,12 +8,12 @@ The project goal was to study the superdense coding protocol and how to implemen
 
 Superdense coding is another quantum communication protocol, which is less useful than quantum teleportation, since phyisically transmitting qubits is quite challenging and classical communication is already quite inexpensive. It is used when Alice wants to transmit two classical bits $c_0$ and $c_1$ to Bob using the shared, conventional $|\Phi^+\rangle$ e-bit. Depending on which classical bits Alice wants to encode, she has to apply different operations on her Bell pair as follows:
 
-| $c_0$ $c_1$   | operation |
-|---------------|-----------|
-|     00        | identity  |
-|     01        | Z gate    |
-|     10        | X gate    |
-|     11        | XZ gate   |
+| $c_0$ $c_1$   | operation |encoding|
+|---------------|-----------|--------|
+|     00        | identity  | $(1\otimes 1)|\Phi^+\rangle = |\Phi^+\rangle$ |
+|     01        | Z gate    |        |
+|     10        | X gate    |        |
+|     11        | XZ gate   |        |
 
 
 ### 3. Implementation
