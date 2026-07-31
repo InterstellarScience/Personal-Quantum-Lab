@@ -16,12 +16,10 @@ Superdense coding is another quantum communication protocol, which is less usefu
 |     11        | XZ gate   | $(1 \otimes XZ)|\Phi^+\rangle = |\Psi^-\rangle$ |
 
 
-|                    encoding                     |
-|-------------------------------------------------|
-| $(1 \otimes 1)|\Phi^+\rangle = |\Phi^+\rangle$  |
-| $(1 \otimes Z)|\Phi^+\rangle = |\Phi^-\rangle$  |
-| $(1 \otimes X)|\Phi^+\rangle = |\Psi^+\rangle$  |
-| $(1 \otimes XZ)|\Phi^+\rangle = |\Psi^-\rangle$ |
+$(1 \otimes 1)|\Phi^+\rangle = |\Phi^+\rangle$
+$(1 \otimes Z)|\Phi^+\rangle = |\Phi^-\rangle$
+$(1 \otimes X)|\Phi^+\rangle = |\Psi^+\rangle$
+$(1 \otimes XZ)|\Phi^+\rangle = |\Psi^-\rangle$
 
 ### 3. Implementation
 
