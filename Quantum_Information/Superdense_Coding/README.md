@@ -17,13 +17,15 @@ Superdense coding is another quantum communication protocol, which is less usefu
 
 which encodes the information into following Bell states:
 
-$(1 \otimes 1)|\Phi^+\rangle = |\Phi^+\rangle$
+$(I \otimes I)|\Phi^+\rangle = |\Phi^+\rangle$
 
-$(1 \otimes Z)|\Phi^+\rangle = |\Phi^-\rangle$
+$(I \otimes Z)|\Phi^+\rangle = |\Phi^-\rangle$
 
-$(1 \otimes X)|\Phi^+\rangle = |\Psi^+\rangle$
+$(I \otimes X)|\Phi^+\rangle = |\Psi^+\rangle$
 
-$(1 \otimes XZ)|\Phi^+\rangle = |\Psi^-\rangle$
+$(I \otimes XZ)|\Phi^+\rangle = |\Psi^-\rangle$.  (The notation used here follows the IBM Quantum convention, where Alice's local operations are written on the second tensor factor of the Bell state.
+
+Alice's qubit is then physically transmitted to Bob through a quantum channel, where Bob decodes the message by applying a CNOT operation, followed by a Hadamard operation on the Bell state and then measuring each qubit, returning the initial classical bits.
 
 
 ### 3. Implementation
