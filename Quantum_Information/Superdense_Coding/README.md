@@ -6,6 +6,7 @@ The project goal was to study the superdense coding protocol and how to implemen
 
 ### 2. Background & Theory
 
+Superdense coding is another quantum communication protocol, which is less useful than quantum teleportation, since phyisically transmitting qubits is quite challenging and classical communication is already quite inexpensive. It is used if Alice wants to transmit two classical bits $c_0$ and $c_1$ to Bob.
 
 
 ### 3. Implementation
