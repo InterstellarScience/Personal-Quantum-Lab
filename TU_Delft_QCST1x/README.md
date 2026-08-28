@@ -1,45 +1,43 @@
-# Personal Quantum Lab (PQL)
+## Machine Learning for Quantum Dot Tuning
 
-Welcome to my Personal Quantum Lab (PQL).
+This project is completed as part of the TU Delft **QCST1x** course. The course investigates how supervised and unsupervised machine-learning techniques can be applied to the configuration and tuning of quantum-dot systems.
 
-This repository contains personal projects exploring quantum computing, quantum communication, and quantum information science. It serves as a collection of simulations, algorithm implementations, and practical experiments developed while studying modern quantum technologies.
+The course is divided into five modules:
 
-## Topics
+### Module 1: Supervised Learning for Quantum Dot Configuration Tuning
 
-Projects that are studied in research areas such as:
+- Introduction to machine learning for quantum devices
+- Neural networks
+- Charge stability diagrams
+- Classification of charge stability diagrams
+- Code demonstration
 
-- Quantum Information
-- Quantum Communication and Quantum Key Distribution (QKD)
-- Quantum Computing
-- Quantum Cryptography
+### Module 2: Charge-State Tuning with Neural Networks
 
-## Software & Platforms
+- The charge-tuning problem
+- Neural-network tuning with feedback
+- Experimental applications
+- Code demonstration
 
-- Python
-- Qiskit
-- Quantum Inspire
-- IBM Quantum Platform
-- NumPy
-- SciPy
-- Matplotlib
+### Module 3: Unsupervised Learning for Quantum-Dot Data
 
-## Repository Structure
+- Clustering of charge stability diagrams
+- Principal component analysis and kernel PCA
+- Unsupervised neural networks
+- Autoencoders in quantum-dot experiments
+- Code demonstration
 
-Each project is contained in its own folder and may include:
+### Module 4: Machine Learning for Fine-Tuning Quantum-Dot Systems
 
-- Source code
-- Documentation & Explanation
-- Example results
-- References where appropriate
+- Fine-tuning quantum dots
+- Overhauser-field estimation
+- Machine-learning methods for fine-tuning
+- Code demonstration
 
-## Purpose
+### Module 5: Review and Outlook
 
-The goal of the PQL is to record my progress in quantum computing and quantum communication through practical projects while still building a growing portfolio of implementations and simulations.
+- Review of the previous modules
+- State-of-the-art tuning methods
+- Outlook for machine learning in quantum technology
 
-## Author
-
-**Samuel Weinzaepfel**
-
----
-
-*This repository is actively updated as new projects are completed.*
+The implementations and notes contained in this repository document my practical work and learning progress throughout the course.
