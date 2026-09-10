@@ -9,9 +9,8 @@ This repository contains personal projects exploring quantum computing, quantum 
 Projects that are studied in research areas such as:
 
 - Quantum Information
-- Quantum Communication and Quantum Key Distribution (QKD)
+- Quantum Communication
 - Quantum Computing
-- Quantum Cryptography
 
 ## Software & Platforms
 
