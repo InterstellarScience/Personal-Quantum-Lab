@@ -21,21 +21,11 @@ The four possible combinations are shown below:
 
 The diagonal basis states are defined as:
 
-$$
-\lvert +\rangle
-=
-\frac{1}{\sqrt{2}}
-\left(\lvert 0\rangle+\lvert 1\rangle\right)
-$$
+$$\lvert +\rangle = \frac{1}{\sqrt{2}} \left(\lvert 0\rangle+\lvert 1\rangle\right) $$
 
 and:
 
-$$
-\lvert -\rangle
-=
-\frac{1}{\sqrt{2}}
-\left(\lvert 0\rangle-\lvert 1\rangle\right).
-$$
+$$ \lvert -\rangle = \frac{1}{\sqrt{2}} \left(\lvert 0\rangle-\lvert 1\rangle\right). $$
 
 Bob does not know the encoding bases chosen by Alice and therefore generates his own random list of measurement bases. If Alice and Bob choose the same basis, Bob obtains Alice's classical bit with certainty for an ideal system. On the other hand, if their bases are different, Bob obtains a random measurement result.
 
