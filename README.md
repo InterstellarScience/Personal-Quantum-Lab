@@ -10,6 +10,7 @@ Projects that are studied in research areas such as:
 
 - Quantum Information
 - Quantum Communication
+- Quantum Network
 - Quantum Computing
 
 ## Software & Platforms
@@ -21,7 +22,12 @@ Projects that are studied in research areas such as:
 - NumPy
 - SciPy
 - Matplotlib
-
+- QNE
+- QNE-ADK
+- NetSquid
+- SquidASM
+- NetQASM
+ 
 ## Repository Structure
 
 Each project is contained in its own folder and may include:
