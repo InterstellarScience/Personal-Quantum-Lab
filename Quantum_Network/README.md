@@ -94,16 +94,16 @@ The required virtual environment must first be activated. The environment contai
 The experiment can then be run from the parent directory using
 
 ```bash
-qne experiment run my_exp
+qne experiment run my-teleport
 ```
 
 The obtained results can be displayed using
 
 ```bash
-qne experiment results my_exp
+qne experiment results my-teleport
 ```
 
-The experiment name `my_exp` can be replaced by the name assigned to the experiment.
+The experiment name `my-teleport` can be replaced by the name assigned to the experiment.
 
 ## 6. Expected Results
 
