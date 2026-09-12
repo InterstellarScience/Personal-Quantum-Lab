@@ -1,0 +1,60 @@
+- BAS: null
+  INS: epr_EntanglementStage.START
+  LOG: start entanglement creation between paris and inssbruck
+  MSR: null
+  NOD:
+  - paris
+  - inssbruck
+  PTH:
+  - paris-inssbruck
+  QGR:
+    327314079:
+      is_entangled: false
+      qubit_ids:
+      - - sender
+        - 0
+      state:
+      - - !!python/complex '1.0'
+        - !!python/complex '0.0'
+      - - !!python/complex '0.0'
+        - !!python/complex '0.0'
+  QID:
+  - 1
+  - 0
+  SIT: 163883.0
+  TYP: null
+  WCT: '2026-09-12 15:35:08.517995'
+- BAS: null
+  INS: epr_EntanglementStage.FINISH
+  LOG: entanglement of type 0 created between paris and inssbruck
+  MSR: null
+  NOD:
+  - paris
+  - inssbruck
+  PTH:
+  - paris-inssbruck
+  QGR:
+    327314079:
+      is_entangled: false
+      qubit_ids:
+      - - sender
+        - 0
+      state:
+      - - !!python/complex '1.0'
+        - !!python/complex '0.0'
+      - - !!python/complex '0.0'
+        - !!python/complex '0.0'
+    327317688:
+      is_entangled: true
+      qubit_ids:
+      - - receiver
+        - 0
+      - - sender
+        - 1
+      state: null
+  QID:
+  - 1
+  - 0
+  SIT: 164883.0
+  TYP: epr_EntanglementType.CK
+  WCT: '2026-09-12 15:35:08.519106'
