@@ -1,0 +1,8 @@
+{
+  "application": {
+    "name": "my_app",
+    "description": "add description",
+    "multi_round": false
+  },
+  "remote": {}
+}

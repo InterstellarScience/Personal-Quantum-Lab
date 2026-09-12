@@ -1,0 +1,40 @@
+- BAS: null
+  INS: epr_EntanglementStage.START
+  LOG: start entanglement creation between paris and inssbruck
+  MSR: null
+  NOD:
+  - paris
+  - inssbruck
+  PTH:
+  - paris-inssbruck
+  QGR: {}
+  QID:
+  - 0
+  - 0
+  SIT: 60085.0
+  TYP: null
+  WCT: '2026-09-12 15:18:28.727373'
+- BAS: null
+  INS: epr_EntanglementStage.FINISH
+  LOG: entanglement of type 0 created between paris and inssbruck
+  MSR: null
+  NOD:
+  - paris
+  - inssbruck
+  PTH:
+  - paris-inssbruck
+  QGR:
+    329588574:
+      is_entangled: true
+      qubit_ids:
+      - - alice
+        - 0
+      - - bob
+        - 0
+      state: null
+  QID:
+  - 0
+  - 0
+  SIT: 61085.0
+  TYP: epr_EntanglementType.CK
+  WCT: '2026-09-12 15:18:28.730999'

@@ -1,0 +1,127 @@
+[
+  {
+    "round_number": 1,
+    "round_set": "local",
+    "round_result": [
+      {
+        "app_alice": {
+          "Alice": 1
+        },
+        "app_bob": {
+          "Bob": 1
+        }
+      }
+    ],
+    "instructions": [
+      {
+        "command": "entanglement",
+        "action": "start",
+        "from": {
+          "node": "paris",
+          "id": 0
+        },
+        "to": {
+          "node": "inssbruck",
+          "id": 0
+        },
+        "channels": [
+          "paris-inssbruck"
+        ],
+        "groups": {}
+      },
+      {
+        "command": "entanglement",
+        "action": "success",
+        "from": {
+          "node": "paris",
+          "id": 0
+        },
+        "to": {
+          "node": "inssbruck",
+          "id": 0
+        },
+        "channels": [
+          "paris-inssbruck"
+        ],
+        "groups": {
+          "329588574": {
+            "qubits": [
+              {
+                "node": "alice",
+                "id": 0
+              },
+              {
+                "node": "bob",
+                "id": 0
+              }
+            ],
+            "is_entangled": true,
+            "state": null
+          }
+        }
+      },
+      {
+        "command": "apply-gate",
+        "qubits": [
+          {
+            "node": "alice",
+            "id": 0
+          }
+        ],
+        "gate": "meas",
+        "parameters": null,
+        "groups": {
+          "329588574": {
+            "qubits": [
+              {
+                "node": "bob",
+                "id": 0
+              }
+            ],
+            "is_entangled": false,
+            "state": [
+              [
+                {
+                  "re": 0.0,
+                  "im": 0.0
+                },
+                {
+                  "re": 0.0,
+                  "im": 0.0
+                }
+              ],
+              [
+                {
+                  "re": 0.0,
+                  "im": 0.0
+                },
+                {
+                  "re": 1.0,
+                  "im": 0.0
+                }
+              ]
+            ]
+          }
+        },
+        "outcome": 1
+      },
+      {
+        "command": "apply-gate",
+        "qubits": [
+          {
+            "node": "bob",
+            "id": 0
+          }
+        ],
+        "gate": "meas",
+        "parameters": null,
+        "groups": {},
+        "outcome": 1
+      },
+      {
+        "command": "application-finished"
+      }
+    ],
+    "cumulative_result": {}
+  }
+]
