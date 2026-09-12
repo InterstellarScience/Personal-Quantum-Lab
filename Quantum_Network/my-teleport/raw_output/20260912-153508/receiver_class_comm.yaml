@@ -1,0 +1,19 @@
+- HFL: /Users/crysis/Documents/PQL/Quantum_Network/clone/my-teleport/input/app_receiver.py
+  HLN: 25
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from sender...
+  MSG: null
+  REC: receiver
+  SEN: sender
+  SOD: 0
+  WCT: '2026-09-12 15:35:08.538900'
+- HFL: /Users/crysis/Documents/PQL/Quantum_Network/clone/my-teleport/input/app_receiver.py
+  HLN: 25
+  INS: RECV
+  LOG: 'Message received from sender: StructuredMessage(header=''Corrections'', payload=[1,
+    1])'
+  MSG: 'Corrections: [1, 1]'
+  REC: receiver
+  SEN: sender
+  SOD: 0
+  WCT: '2026-09-12 15:35:08.760533'

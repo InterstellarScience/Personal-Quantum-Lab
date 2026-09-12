@@ -1,0 +1,10 @@
+- HFL: /Users/crysis/Documents/PQL/Quantum_Network/clone/my-teleport/input/app_sender.py
+  HLN: 55
+  INS: SEND
+  LOG: 'Send classical message to receiver: {"header": "Corrections", "payload": [1,
+    1]}'
+  MSG: 'Corrections: (1, 1)'
+  REC: receiver
+  SEN: sender
+  SOD: 0
+  WCT: '2026-09-12 15:35:08.648700'
