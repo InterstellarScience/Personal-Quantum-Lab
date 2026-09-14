@@ -6,7 +6,6 @@ Projects exploring quantum circuits, quantum algorithms, and implementations usi
 - Deutsch Algorithm
 - Deutsch–Jozsa Algorithm
 - Grover's Search Algorithm
-- Quantum Fourier Transform (QFT)
 - Quantum Phase Estimation (QPE)
 - Shor's Algorithm
 
@@ -14,3 +13,4 @@ Projects exploring quantum circuits, quantum algorithms, and implementations usi
 
 
 ## Finished Project(s)
+- Quantum Fourier Transform (QFT) (cQASM version)
