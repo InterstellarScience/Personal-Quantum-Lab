@@ -1,4 +1,4 @@
-§§ Quantum Fourier Transform cQASM simple version
+$$ Quantum Fourier Transform cQASM simple version
 
 Short explanation, since the big one will be shown in the QFT_Qiskit version, with the theory behind it.
 
