@@ -1,3 +1,5 @@
 ## Free-Space Optical QKD Simulator
 
-!!! Currently under creation !!!
+A modular simulator for quantum key distribution over terrestrial and satellite free-space optical channels.
+
+!!! Status: Under development !!!
