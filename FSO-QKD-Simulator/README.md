@@ -2,4 +2,4 @@
 
 A simulator for quantum key distribution over terrestrial and satellite free-space optical channels.
 
-!!! Status: Under development !!!
+!!! Status: This project is currently under active development. !!!
