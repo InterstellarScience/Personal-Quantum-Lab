@@ -6,5 +6,5 @@ A simulator for quantum key distribution over terrestrial and satellite free-spa
 
 Already implemented: 
 
-BB84 protocol
-Eve interception and resend to Bob
+- BB84 protocol
+- Eve interception and resend to Bob
