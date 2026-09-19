@@ -1,6 +1,5 @@
-# Import the necessary package(s)
+# Import the necessary package
 import numpy as np
-import qiskit as qk
 
 
 # Create Eve's choices generator
