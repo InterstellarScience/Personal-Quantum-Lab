@@ -1,4 +1,0 @@
-python
-numpy
-qiskit
-qiskit-aer
