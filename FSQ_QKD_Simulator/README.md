@@ -2,8 +2,6 @@
 
 A simulator for quantum key distribution over terrestrial and satellite free-space optical channels. 
 
-An image of an experimental example setup was done by AI using prompts of some of the formulae and concepts I have learned and used during the programming sessions.
-
 !!! Status: This project is currently under active development. !!!
 
 ## Development Status
@@ -137,7 +135,7 @@ The simulator is currently under active development.
 
 ### Acknowledgements
 
-ChatGPT by OpenAI is used as an AI-assisted mentor for conceptual guidance, physics explanations, code review, and debugging support. All final modelling and implementation decisions remain the responsibility of the author.
+ChatGPT by OpenAI is used as an AI-assisted mentor for conceptual guidance, physics explanations, code review, and debugging support. All final modelling and implementation decisions remain the responsibility of the author. An image of an experimental example setup was done by AI using prompts of some of the formulae and concepts I have learned and used during the programming sessions.
 
 > [!NOTE]
 > This project is an educational and research-oriented simulator. It is not
