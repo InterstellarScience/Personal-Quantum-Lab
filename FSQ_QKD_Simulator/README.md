@@ -32,11 +32,11 @@ The simulator is currently under active development.
 - [x] Background-light noise
 - [x] Distance-dependent geometric channel loss
 - [x] Beam-divergence and receiver-aperture model
+- [x] Atmospheric extinction
+- [x] Sifted-key rate calculation
 
 ### Core Features Still in Development
 
-- [ ] Atmospheric extinction
-- [ ] Sifted-key rate calculation
 - [ ] Secure-key rate estimation
 - [ ] Error-correction leakage model
 - [ ] Privacy-amplification estimate
