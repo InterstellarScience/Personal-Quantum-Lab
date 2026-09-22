@@ -2,7 +2,7 @@
 
 A simulator for quantum key distribution over terrestrial and satellite free-space optical channels. 
 
-!!! Status: This project is currently under active development. !!!
+!!! Status: This project is currently under active development. !!!  -> Once the project is finished, I am going to reupload my whole FSO QKD file in case I forgot to edit the update version, so that I am not missing anything.
 
 ## Development Status
 
