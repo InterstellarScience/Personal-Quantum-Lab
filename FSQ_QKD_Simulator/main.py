@@ -5,7 +5,7 @@ from post_processing.qber import (calculate_qber, select_test_bits, should_abort
 from simulation.monte_carlo import (run_transmissions, run_transmissions_fast)
 from components.source import (generate_photon_numbers, classify_pulses, calculate_pulse_percentages)
 from fs_channel.free_space import(apply_channel_loss)
-from components.detector import (apply_detector_efficiency, generate_dark_counts)
+from components.detector import (apply_detector_efficiency, generate_dark_counts, generate_misalignment_flags, generate_background_counts)
 
 
 ## Prepare Alice's qubits
@@ -76,6 +76,15 @@ dark_count_probability = float(input("Enter the dark-count probability per signa
 dark_count_flags = generate_dark_counts(detected_photon_numbers,dark_count_probability)
 print("Dark-count detections:", sum(dark_count_flags))
 
+# Generate misalignment probability of Alice's and Bob's encoding & measurement bases
+misalignment_probability = float(input("Enter the misalignment probability between 0 and 1: "))
+misalignment_flags = generate_misalignment_flags(detected_photon_numbers, misalignment_probability)
+
+# Generate the possible background noise counts
+mean_background_photons = float(input("Enter the mean background photons per signal window: "))
+background_count_flags = generate_background_counts(detected_photon_numbers, mean_background_photons)
+print("Background noise detected: ", sum(background_count_flags), " counts.")
+
 
 ## Interception procedure from Eve
 # Create the interception decision for Eve
@@ -87,9 +96,9 @@ eve_intercepts, eve_bases = generate_eve_choices(n, intercept_probability)
 simulation_mode = input("Choose simulation mode ('qiskit' or 'fast'): ").lower()
  
 if simulation_mode == "qiskit":
-    bob_bits = run_transmissions(alice_bits, alice_bases, bob_bases, eve_intercepts, eve_bases, detected_photon_numbers, dark_count_flags)
+    bob_bits = run_transmissions(alice_bits, alice_bases, bob_bases, eve_intercepts, eve_bases, detected_photon_numbers, dark_count_flags, misalignment_flags, background_count_flags)
 elif simulation_mode == "fast":
-    bob_bits = run_transmissions_fast(alice_bits, alice_bases, bob_bases, eve_intercepts, eve_bases, detected_photon_numbers, dark_count_flags)
+    bob_bits = run_transmissions_fast(alice_bits, alice_bases, bob_bases, eve_intercepts, eve_bases, detected_photon_numbers, dark_count_flags, misalignment_flags, background_count_flags)
 else:
     raise ValueError("Incorrect choice. Re-try the experiment.")
 
