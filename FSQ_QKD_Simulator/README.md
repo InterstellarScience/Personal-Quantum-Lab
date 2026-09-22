@@ -137,7 +137,7 @@ The simulator is currently under active development.
 
 ### Acknowledgements
 
-ChatGPT by OpenAI was used as an AI-assisted mentor for conceptual guidance, physics explanations, code review, and debugging support. All final modelling and implementation decisions remain the responsibility of the author.
+ChatGPT by OpenAI is used as an AI-assisted mentor for conceptual guidance, physics explanations, code review, and debugging support. All final modelling and implementation decisions remain the responsibility of the author.
 
 > [!NOTE]
 > This project is an educational and research-oriented simulator. It is not
