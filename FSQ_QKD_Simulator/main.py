@@ -4,7 +4,7 @@ from attacks.intercept_resend import (generate_eve_choices)
 from post_processing.qber import (calculate_qber, select_test_bits, should_abort)
 from simulation.monte_carlo import (run_transmissions, run_transmissions_fast)
 from components.source import (generate_photon_numbers, classify_pulses, calculate_pulse_percentages)
-from fs_channel.free_space import(apply_channel_loss)
+from fs_channel.free_space import(apply_channel_loss, calculate_beam_radius, calculate_geometric_transmittance)
 from components.detector import (apply_detector_efficiency, generate_dark_counts, generate_misalignment_flags, generate_background_counts)
 
 
@@ -49,11 +49,28 @@ print(f"Pre-send: Vacuum pulses: {vacuum_count} - {vacuum_percentage:.2f}%")
 print(f"Pre-send: Single photon pulses: {single_photon_count} - {single_photon_percentage:.2f}%")
 print(f"Pre-send: Multiphoton pulses: {multiphoton_count} - {multiphoton_percentage:.2f}%")
 
+
+## Calculate Gaussian beam propagation
+# Calculate beam radius
+distance = float(input("Enter propagation distance in metres: "))
+wavelength_nm = float(input("Enter wavelength in nanometres: "))
+beam_waist = float(input("Enter transmitter beam waist in metres: "))
+wavelength = wavelength_nm * 1e-9
+beam_radius = calculate_beam_radius(distance, wavelength, beam_waist)
+print(f"Beam radius at Bob: {beam_radius:.6f} m")
+
+# Calculate geometric transmittance
+receiver_aperture_diameter = float(input("Enter Bob's receiver aperture diameter in metres: "))
+receiver_aperture_radius = receiver_aperture_diameter / 2
+geometric_transmittance = calculate_geometric_transmittance(beam_radius, receiver_aperture_radius)
+print(f"Geometric transmittance: {geometric_transmittance:.4f}")
+
 # Give channel transmittance variable and apply channel loss
-channel_transmittance = float(input("Enter the channel transmittance between 0 and 1: "))
+channel_transmittance = geometric_transmittance
 received_photon_numbers = apply_channel_loss(photon_numbers, channel_transmittance)
 
-# Post-send: Classify photon numbers
+
+## Post-send: Classify photon numbers
 received_vacuum_count, received_single_photon_count, received_multiphoton_count = classify_pulses(received_photon_numbers)
 received_vacuum_percentage, received_single_photon_percentage, received_multiphoton_percentage = calculate_pulse_percentages(len(alice_bits), received_vacuum_count, received_single_photon_count, received_multiphoton_count)
 print(f"Zero received vacuum pulses: {received_vacuum_count} - {received_vacuum_percentage:.2f}%")
