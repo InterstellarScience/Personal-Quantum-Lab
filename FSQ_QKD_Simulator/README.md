@@ -30,11 +30,11 @@ The simulator is currently under active development.
 - [x] Validation against the theoretical relation (QBER)
 - [x] Receiver and optical misalignment errors
 - [x] Background-light noise
+- [x] Distance-dependent geometric channel loss
+- [x] Beam-divergence and receiver-aperture model
 
 ### Core Features Still in Development
 
-- [ ] Distance-dependent geometric channel loss
-- [ ] Beam-divergence and receiver-aperture model
 - [ ] Atmospheric extinction
 - [ ] Sifted-key rate calculation
 - [ ] Secure-key rate estimation
