@@ -27,7 +27,7 @@ The simulator is currently under active development.
 - [x] Detector efficiency
 - [x] Detector dark counts
 - [x] Nondetection handling
-- [x] Validation against the theoretical relation \(QBER \approx p_E/4\)
+- [x] Validation against the theoretical relation (QBER)
 - [x] Receiver and optical misalignment errors
 - [x] Background-light noise
 
