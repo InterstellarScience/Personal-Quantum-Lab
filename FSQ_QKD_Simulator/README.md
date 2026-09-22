@@ -2,7 +2,7 @@
 
 A simulator for quantum key distribution over terrestrial and satellite free-space optical channels. 
 
-Image of experimental example setup done with AI using prompts of some of the formulae used during the programming session.
+An image of an experimental example setup was done by AI using prompts of some of the formulae and concepts I have learned and used during the programming sessions.
 
 !!! Status: This project is currently under active development. !!!
 
