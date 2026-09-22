@@ -51,3 +51,24 @@ def calculate_geometric_transmittance(beam_radius, receiver_aperture_radius):
     geometric_transmittance = 1 - m.exp(- 2*(receiver_aperture_radius/beam_radius)**2)
 
     return (geometric_transmittance)
+
+
+# Calculate the atmospheric transmittance for the channel transmittance
+def calculate_atmospheric_transmittance(distance, attenuation):
+    # Validate the distance and attenuation
+    if distance <0:
+        raise ValueError("Error. Distance cannot be negative.")
+    
+    if attenuation <0:
+        raise ValueError("Error. Attenuation cannot be negative.")
+    
+    # Convert to kilometers
+    distance_km = distance/1000
+
+    # Total atmospheric loss
+    a_dB = attenuation * distance_km
+
+    # Calculate amtospheric transmittance
+    atmospheric_transmittance = 10**(-a_dB/10)
+
+    return (atmospheric_transmittance)
