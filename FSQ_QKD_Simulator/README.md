@@ -53,6 +53,8 @@ The simulator is currently under active development.
 - [ ] Atmospheric turbulence
 - [ ] Beam wandering
 - [ ] Pointing and tracking errors
+- [ ] Actual key reconciliation using Cascade or LDPC codes
+- [ ] Actual privacy amplification using universal hashing
 - [ ] Finite-key statistical analysis
 - [ ] Time-varying weather conditions
 - [ ] Satellite-link geometry and orbital passes
