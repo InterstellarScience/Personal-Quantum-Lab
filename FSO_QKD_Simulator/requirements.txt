@@ -1,0 +1,5 @@
+python
+numpy
+qiskit
+qiskit-aer
+matplotlib
