@@ -6,7 +6,7 @@ from simulation.monte_carlo import (run_transmissions, run_transmissions_fast)
 from components.source import (generate_photon_numbers, classify_pulses, calculate_pulse_percentages)
 from fs_channel.free_space import(apply_channel_loss, calculate_beam_radius, calculate_geometric_transmittance, calculate_atmospheric_transmittance)
 from components.detector import (apply_detector_efficiency, generate_dark_counts, generate_misalignment_flags, generate_background_counts)
-from simulation.key_rate import(calculate_protocol_rates)
+from simulation.key_rate import(calculate_protocol_rates, calculate_secret_fraction, calculate_secure_key_rate)
 
 
 ## Prepare Alice's qubits
@@ -164,7 +164,18 @@ print(f"Remaining key rate: {remaining_key_rate:.2f} bits/s")
 # Continue or abort transmission
 qber_threshold = 0.11
 decision = should_abort(estimated_qber,qber_threshold)
+
+# Calculate secret fraction and secure key rate
+error_correction_efficiency = float(input("Enter the error-correction efficiency (>= 1): "))
+secret_fraction = calculate_secret_fraction(estimated_qber, error_correction_efficiency)
+secure_key_rate = calculate_secure_key_rate(remaining_key_rate, secret_fraction, decision)
+print(f"Secret fraction: {secret_fraction:.4f}")
+print(f"Secure key rate: {secure_key_rate:.2f} bits/s")
+
+# Decision
 if decision:
     print("Protocol aborted: the estimated QBER exceeds the security threshold.")
+elif secret_fraction == 0:
+    print("No secure key can be extracted with the selected error-correction efficiency.")
 else:
-    print("QBER test passed: continue to error correction and privacy amplification.")
+    print("QBER test passed: a positive secure key rate can be extracted.")
