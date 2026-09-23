@@ -2,11 +2,11 @@
 
 A simulator for quantum key distribution over terrestrial and satellite free-space optical channels. 
 
-!!! Status: This project is currently under active development. !!!  -> Once the project is finished, I am going to reupload my whole FSO QKD file in case I forgot to edit the update version, so that I am not missing anything.
+!!! Status: This project is currently under active development but the current version is working as intended as a simple simulator. To use it: simply run the experiment in the main.py file. If you want to change some parameters, you can do so in the config.py file. !!!
 
 ## Development Status
 
-The simulator is currently under active development.
+The simulator is currently under active development. Explanation of physics and implementation comes later.
 
 ### Implemented
 
