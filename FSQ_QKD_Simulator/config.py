@@ -1,26 +1,20 @@
-import qiskit as qk
-import numpy as np
-
-# Create quantum circuit for single qubit
-def prepare_single_qubit(bit, basis):
-    # Create quantum circuit
-    qc = qk.QuantumCircuit(1,1)
-
-    #Z-basis check
-    if bit == 0 and basis == 0:
-        qc.id(0)
-    
-    if bit == 1 and basis == 0:
-        qc.x(0)
-    
-    #X-basis check
-    if bit == 0 and basis == 1:
-        qc.h(0)
-    
-    if bit == 1 and basis == 1:
-        qc.h(0)
-        qc.z(0)
-
-    return (qc)
-
-prepare_single_qubit(np.random.randint(0,2),np.random.randint(0,2))
+# Dictionary of default parameters to run the simulation on 'fast'
+DEFAULT_CONFIG = {
+    "number_of_signals": 100000,
+    "eve_interception_probability": 0.0,
+    "mean_photon_number": 0.5,
+    "distance": 1000,
+    "wavelength_nm": 1550,
+    "beam_waist": 0.05,
+    "receiver_aperture_diameter": 0.05,
+    "attenuation_db_per_km": 0.2,
+    "detector_efficiency": 0.6,
+    "dark_count_probability": 0.00001,
+    "mean_background_photons": 0.001,
+    "misalignment_probability": 0.02,
+    "test_fraction": 0.25,
+    "pulse_repetition_rate": 1000000,
+    "error_correction_efficiency": 1.16,
+    "qber_threshold": 0.11,
+    "simulation_mode": "fast",
+}
