@@ -2,7 +2,7 @@
 
 A simulator for quantum key distribution over terrestrial and satellite free-space optical channels. 
 
-!!! Status: This project is currently under active development but the current version is working as intended as a simple simulator. To use it: simply run the experiment in the main.py file. If you want to change some parameters, you can do so in the config.py file. !!!
+!!! Status: This project is currently under active development but the current version is working as intended as a simple simulator. To use it: simply run the experiment in the main.py file. If you want to change some parameters, you can do so in the config.py file. Also, swap between simulation modes in conifg.py using either 'qiskit' or 'fast'. Careful, for qiskit I wouldn't recommend to go over 1000 signals, since it can take quite a long time for it to load. !!!
 
 ## Development Status
 
