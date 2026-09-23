@@ -1,6 +1,6 @@
 ## Free-Space Optical QKD Simulator v.1.0
 
-A simulator for quantum key distribution over terrestrial and satellite free-space optical channels. 
+A simulator for quantum key distribution over terrestrial and satellite free-space optical channels. Project has been edited many times but also has been re-uploaded once the simple v.1.0 has been finished, hence no history present.
 
 !!! Status: This project is currently under active development but the current version is working as intended as a simple simulator. To use it: simply run the experiment in the main.py file. If you want to change some parameters, you can do so in the config.py file. Also, swap between simulation modes in conifg.py using either 'qiskit' or 'fast'. Careful, for qiskit I wouldn't recommend to go over 1000 signals, since it can take quite a long time for it to load. !!!
 
