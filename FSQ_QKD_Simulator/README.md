@@ -34,12 +34,12 @@ The simulator is currently under active development.
 - [x] Beam-divergence and receiver-aperture model
 - [x] Atmospheric extinction
 - [x] Sifted-key rate calculation
+- [x] Secure-key rate estimation
+- [x] Simple error-correction leakage model
+- [x] Simple privacy-amplification estimate
 
 ### Core Features Still in Development
 
-- [ ] Secure-key rate estimation
-- [ ] Error-correction leakage model
-- [ ] Privacy-amplification estimate
 - [ ] Automated parameter sweeps
 - [ ] QBER, detection-rate and key-rate plots
 - [ ] Unit and integration tests
