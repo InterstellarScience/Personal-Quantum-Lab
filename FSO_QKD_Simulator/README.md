@@ -1,4 +1,4 @@
-## Free-Space Optical QKD Simulator
+## Free-Space Optical QKD Simulator v.1.0
 
 A simulator for quantum key distribution over terrestrial and satellite free-space optical channels. 
 
